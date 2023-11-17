@@ -7,6 +7,28 @@
 <html>
 	<head>
 		<title>Stellar by HTML5 UP</title>
+		<style>
+			div.scroll {
+			  background-color: #fed9ff;
+			  width: 624px;
+			  height: 444px;
+			  overflow-x: hidden;
+			  overflow-y: auto;
+			  text-align: center;
+			  padding: 20px;
+			}
+			div.hscroll {
+				background-color: lightblue;
+				border: 1px solid black;
+				height: 624px;
+				width: 444px;
+				overflow-x: scroll;
+				}
+				p {
+				width: 1000px;
+				margin: 10px;
+			}
+		  </style>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -297,7 +319,7 @@
 										range of design ideas en route to the idea we committed to.</p>
 									<img src="images/design_process.png" alt="Design Process" style="max-width: 100%;">
 
-									<h4><strong>Idea 1: User Journey Roadmap</strong></h4>
+									<h4><strong>Idea 1: Home-buying Journey Roadmap</strong></h4>
 									<p>One of the most important design ideas in our portfolio (that we ultimately pivoted away from), 
 										was to have the home-buying journey laid out like a visual road map, with details about each 
 										step of the journey and a checklist of important tasks for them to record and follow. 
@@ -410,30 +432,41 @@
 									<header class="major">
 										<h2>Design Refinement</h2>
 									</header>
-									<p>
-									</p>
+									<p>During this phase, we took our website prototype from paper and still images to an interactive, digital prototype. We kept in mind the user journey we developed during the previous phase, as shown below.</p>
+									<div class="hscroll">
+										<img src="images/flowchart.jpg" alt="User Journey Flowchart", style="max-width: 100%;">
+									</div>
 
 									<h3>Design Overview</h3>
 
 									<p>Our website helps first-time homebuyers navigate the homebuying process. The website contains a few key features to achieve this aim:</p>
-									<ul>
-										<li> A home page detailing various features. The most important among these is a search bar, where a user can enter the location of an area they are considering buying a home in.</li>
-										<li>Searching for a given location navigates to a homebuying journey page, which outlines the homebuying process for a given location with key steps.</li>
-										<li>An AI chatbot that a homebuyer can ask questions to. This chatbot is easily accessible and can be found with a single click on any of our websites pages. This chatbot isn’t actually implemented in an interactive way yet since that is difficult to do. </li>
-										<li>A “Resources” page . On this page, the user can look at key scenarios that first-time homebuyers usually need help with and understand. </li>
-									</ul>
+									<ol>
+										<li> A home page detailing various features. The most important among these is a search bar, where a user can enter the location of an area they are considering buying a home in.
+											<img src="images/landing_page_old.png" alt="Home Page (Old)", style="max-width: 100%;">
+										</li>
+										<li>Searching for a given location navigates to a homebuying journey page, which outlines the homebuying process for a given location with key steps.
+											<img src="images/user_journey_old.png" alt="Home-buying Journey Page (Old)", style="max-width: 100%;">
+										</li>
+										<li>An AI chatbot that a homebuyer can ask questions to. This chatbot is easily accessible and can be found with a single click on any of our websites pages. This chatbot isn’t actually implemented in an interactive way yet since that is difficult to do.
+											<img src="images/chatbot_new.png" alt="Chatbot (New)", style="max-width: 100%;">
+										</li>
+										<li>A “Resources” page . On this page, the user can look at key scenarios that first-time homebuyers usually need help with and understand. 
+											<img src="images/resources_old.png" alt="Resources Page (Old)", style="max-width: 100%;">
+										</li>
+									</ol>
 
 									<p>The above features all exist without the user needing to log in to the website. However, once the user has logged into the website (and is therefore able to save information between sessions), they can access the central feature of this site:</p>
 									<p>The Dashboard is a single place where the user can track and manage information regarding the homebuying process. This includes checklists to keep track of tasks, a progress tracker to indicate the position of the user in the overall journey, and features like a finance calculator.</p>
+									<img src="images/dashboard_old.png" alt="Dashboard (Old)", style="max-width: 100%;">
 									<p>Additionally, once the user is logged in, we also have a set of features such as allowing users to pick their avatar, review their privacy settings, and perform actions such as changing passwords.</p>
 
 
 									<h3> Notable Changes</h3>
 									<p>We made the following key changes to our prototype, all using feedback from co-designs in the Design Development phase:</p>
 									<ul>
-										<li> We renamed the “Blogs” page to “Resources” because from feedback on the paper prototype, blogs made it seem like we the developers of the website were writing the blogs which was a bit misleading.</li>
+										<li> We renamed the “Blogs” page to “Resources” because from feedback on the paper prototype, blogs made it seem like the page was a place for posting which was a bit misleading.</li>
 										<li>Based on user feedback that logging in and providing sensitive information was a deterrent to using the site, we maximized the features that were accessible without logging in. These include the home page, homebuying journey map, and more.</li>
-										<li>We also decided to get rid of the forms and documents section of our website because the market competition addresses this need in a sufficient way that our product didn’t need to provide. </li>
+										<li>We also decided to get rid of the forms and documents section of our website because the market competition addresses this need in a sufficient way that our product did not need to provide. </li>
 										<li>We redesigned the homepage to only include blurbs about the AI chatbot, personalized tracker, and expert feedback so that the consumer could get the gist of our product from what we were doing. </li>
 										<li>Lastly, we kept the modularity of our dashboard but incorporated a few more elements than on the paper prototype to show the progress of the user more succinctly. </li>
 									</ul>
@@ -455,7 +488,7 @@
 										<li>Here is the <a href=”https://docs.google.com/document/d/1LGHJXKcdk5zsSko-JeEa4DbIPUox0MtCU_iNyKSHQTI/edit?usp=sharing”> link</a> to the feedback we received from Team 4 (Big Scary Dragons).</li>
 									</ul>
 
-									<h3>What is your design? How does it work?</h3>
+									<h3>What is our design? How does it work?</h3>
 									<p>Our design is a website which encapsulates a few key features. First, we have a home page which users are able to navigate with or without being logged in. Here we have several features, a personalized tracker, an AI chatbot and expert information. By clicking these, the user will be brought to an overlay which details the features. </p>
 
 									<p>Once the user is logged in, they are able to get their own personalized dashboard which includes a journey map that indicates which step of the process they are on. Along with that, it also includes a to-do list, things to know, a financial calculator, and a current status pie chart. By clicking each icon it gives more information as well. </p>
@@ -479,8 +512,25 @@
 
 									<h3>Key Insights</h3>
 									<p>Mental connections between pages that seem clear to us are not always clear to a user. For example, In both our heuristic evaluation and during our cognitive walkthrough, multiple people stated that they did not understand the purpose of entering a location on the home page. They expected a list of results rather than a new page with a scrollable walkthrough of the homebuying journey.</p>
-									<p>We need to think beyond our initial vision of our website and make sure everything is accessible for the user when they want it and not when we intended. For example, for the user journey page, we thought of it as a quick view of what the website was about before committing to sign up, which is not what users interpreted it as.</p>
+									<p>We need to think beyond our initial vision of our website and make sure everything is accessible for the user when they want it and not when we intended. For example, for the home-buying journey page, we thought of it as a quick view of what the website was about before committing to sign up, which is not what users interpreted it as.</p>
 									<p>Words are powerful mental model influencers and word choice can drastically change the function of an element a user expects. For example, the resources page was originally called the blog page and this also created misunderstandings about what this page had to offer. Blog created the idea that the page had blog posts and peoples’ opinions about house-buying which was a deterrent as first-time buyers wanted facts and trustable knowledge and not opinions.</p>
+									<p>From these insights we wera able to make a few new changes to our Figma prototype ahead of Phase 4 with a new:</p>
+									<ul>
+										<li>Homepage, removing the confusing search bar for something more clear</li>
+										<img src="images/landing_page_new.png" alt="Home Page (New)", style="max-width: 100%;">
+										<li>Home-buying Journey Page, adding a more detailed and explanatory format of the journey</li>
+										<div class="scroll">
+											<img src="images/landing_page_old.png" alt="Home Page (Old)", style="max-width: 100%;">
+										</div>
+										<li>Dashboard page, adding labels for relevant icons and add functionality of adding a house</li>
+										<img src="images/dashboard_new.png" alt="Dashboard (New)", style="max-width: 100%;">
+										<li>Resources page, adding scrollability and improved labels and readability</li>
+										<img src="images/resources_new.png" alt="Resources Page (New)", style="max-width: 100%;">
+										<li>FAQ (Frequently Asked Questions) page, correctingt the text consistency</li>
+										<img src="images/FAQ_new.png" alt="FAQ Page (New)", style="max-width: 100%;">
+										<li>Avatar page, making better customization images</li>
+										<img src="images/avatr_new.png" alt="Avatar Page (New)", style="max-width: 100%;">
+									</ul>
 
 
 									<h3>What questions do you have now about your project? What shortcomings are you aware of?</h3>
@@ -489,10 +539,6 @@
 										<li>The website was originally designed for someone starting the home-buying process after they had found a house. Now we have shifted this group to include people who may not have even found a house and we would like to investigate how to make the information we provide easy to understand, and make the flow of that information between website pages more intuitive. </li>
 										<li>One shortcoming we have is that other teams did not see the financial aspects and integrations into the site that they would have liked. Moving forward we should have more transparency about the financial process of home-buying, as that is a core part of our original mission. </li>
 										<li>As we are working with sensitive personal information, such as mortgages, contracts, and agent-client communications, we need to be aware of privacy concerns and what we do with the data.
-									<ul>
-									<li>As always, illustrate your report with appropriate photographs. You may incorporate (by reference or explicitly) any intermediate deliverables as well as your prototype. You may also refer to deliverables from your Needs Analysis and Design Development phases.</li>
-									</ul>
-									</li>
 									</ul>
 
 
